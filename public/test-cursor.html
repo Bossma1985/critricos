@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Cursor Personalizado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        
+        .test-button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: url('/cursor.png') 24 24, pointer;
+            border-radius: 8px;
+        }
+        
+        .test-link {
+            color: #2196F3;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 10px;
+            display: inline-block;
+            cursor: url('/cursor.png') 24 24, pointer;
+        }
+        
+        .test-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Test del Cursor Personalizado</h1>
+    <p>Pasa el cursor por encima de estos elementos para probar:</p>
+    
+    <button class="test-button">Botón de Prueba</button>
+    <br><br>
+    <a href="#" class="test-link">Enlace de Prueba</a>
+    <br><br>
+    <button onclick="alert('¡Funciona!')">Botón con onclick</button>
+    
+    <p><strong>Instrucciones:</strong></p>
+    <ul>
+        <li>Pasa el cursor por encima del botón verde</li>
+        <li>Pasa el cursor por encima del enlace azul</li>
+        <li>Pasa el cursor por encima del botón con onclick</li>
+    </ul>
+    
+    <p><em>Si ves tu cursor personalizado, el problema está en Next.js. Si no lo ves, el problema está en la imagen o el CSS.</em></p>
+</body>
+</html> 
