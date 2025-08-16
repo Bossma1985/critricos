@@ -19,18 +19,18 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://lanaranjadigna.com'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     title: "LaNaranjaDigna - Cítricos al por Mayor de la Valldigna",
     description: "Calidad de agricultor, directo a tu negocio. Solución integral de zumo para hostelería.",
-    url: 'https://lanaranjadigna.com',
+    url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
     siteName: 'LaNaranjaDigna',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/logo.png',
         width: 1200,
         height: 630,
         alt: 'LaNaranjaDigna - Cítricos de la Valldigna',
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: "LaNaranjaDigna - Cítricos al por Mayor de la Valldigna",
     description: "Calidad de agricultor, directo a tu negocio. Solución integral de zumo para hostelería.",
-    images: ['/og-image.jpg'],
+    images: ['/logo.png'],
   },
   robots: {
     index: true,
@@ -55,9 +55,6 @@ export const metadata: Metadata = {
       'max-image-preview': 'large',
       'max-snippet': -1,
     },
-  },
-  verification: {
-    google: 'tu-codigo-de-verificacion',
   },
 };
 

@@ -9,21 +9,21 @@ const testimonios = [
     cargo: "Propietaria, Restaurante El Rincón",
     texto: "La calidad de las naranjas es excepcional. Nuestros clientes siempre preguntan por el zumo natural. El servicio técnico es impecable.",
     rating: 5,
-    imagen: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    imagen: "/images/testimonials/maria-garcia.jpg"
   },
   {
     nombre: "Carlos Rodríguez",
     cargo: "Gerente, Hotel Valencia Palace",
     texto: "Desde que trabajamos con LaNaranjaDigna, nuestros desayunos han mejorado notablemente. La máquina funciona perfectamente y el suministro es puntual.",
     rating: 5,
-    imagen: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+    imagen: "/images/testimonials/carlos-rodriguez.jpg"
   },
   {
     nombre: "Ana López",
     cargo: "Directora, Cafetería Central",
     texto: "La inversión inicial fue mínima y la rentabilidad máxima. Nuestros clientes aprecian la calidad del zumo recién exprimido.",
     rating: 5,
-    imagen: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+    imagen: "/images/testimonials/ana-lopez.jpg"
   }
 ]
 
