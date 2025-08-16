@@ -40,7 +40,7 @@ const nextConfig: NextConfig = {
   },
   // Optimización de bundle
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 }
 
