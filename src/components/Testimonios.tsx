@@ -70,7 +70,7 @@ export default function Testimonios() {
 
               {/* Texto del testimonio */}
               <p className="text-gray-700 mb-6 leading-relaxed">
-                "{testimonio.texto}"
+                &ldquo;{testimonio.texto}&rdquo;
               </p>
 
               {/* Información del cliente */}
