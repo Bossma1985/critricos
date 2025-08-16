@@ -43,9 +43,9 @@ export default function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <button
-              onClick={() => scrollToSection('contacto')}
-                             className="group relative overflow-hidden rounded-xl p-2 transition-all duration-300 hover:bg-white/10"
+                        <button
+              onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+              className="group relative overflow-hidden rounded-xl p-2 transition-all duration-300 hover:bg-white/10"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-orange-400/20 to-green-400/20 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
               <Image

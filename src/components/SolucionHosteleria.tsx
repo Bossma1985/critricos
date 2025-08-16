@@ -30,7 +30,7 @@ export default function SolucionHosteleria() {
   };
 
   return (
-    <section id="solucion-hosteleria" className="py-20 bg-gray-50">
+    <section id="solucion-hosteleria" className="py-20 bg-gradient-to-r from-orange-100 via-yellow-100 to-lime-200">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -56,10 +56,28 @@ export default function SolucionHosteleria() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow"
+              className={`rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 transform hover:scale-105 ${
+                index === 0 
+                  ? 'bg-gradient-to-br from-orange-50 to-orange-100 border border-orange-200/50' 
+                  : index === 1 
+                  ? 'bg-gradient-to-br from-yellow-50 to-yellow-100 border border-yellow-200/50'
+                  : 'bg-gradient-to-br from-lime-50 to-lime-100 border border-lime-200/50'
+              }`}
             >
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6 mx-auto">
-                <feature.icon className="w-8 h-8 text-green-600" />
+              <div className={`w-16 h-16 rounded-full flex items-center justify-center mb-6 mx-auto ${
+                index === 0 
+                  ? 'bg-gradient-to-br from-orange-200 to-orange-300' 
+                  : index === 1 
+                  ? 'bg-gradient-to-br from-yellow-200 to-yellow-300'
+                  : 'bg-gradient-to-br from-lime-200 to-lime-300'
+              }`}>
+                <feature.icon className={`w-8 h-8 ${
+                  index === 0 
+                    ? 'text-orange-600' 
+                    : index === 1 
+                    ? 'text-yellow-600'
+                    : 'text-lime-600'
+                }`} />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4 text-center">
                 {feature.title}
